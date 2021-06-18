@@ -1,3 +1,27 @@
 git remote add origin git@github.com:ABromide/DataStructure-kaoyan.git
 git push -u origin main
 git push origin main
+
+git pull --rebase origin main
+git push origin main
+
+
+一般在进行git操作的时候出现Already up to date.问题有两种情况
+
+　　一、当前分支的文件和远程仓库的文件不统一，这时候就需要将远程仓库的文件同步到本地仓库后再merge
+
+　　　　git pull origin 分支名   　　　　　　#  更新本地仓库数据
+
+　　　　git merge　要合并的分支名　　　　# 重新合并分支
+
+　　　　git push origin 远程分支名　　　　　　#  提交合并后的数据
+
+　　二、本地仓库有新增的文件没有add和commit
+
+　　　　git add . 　　　　　　　　　　
+
+　　　　git commit -m "描述信息"
+
+　　　　git merge　要合并的分支名　　　　# 重新合并分支
+
+　　　　git push origin 远程分支名　　　　　　#  提交合并后的数据
