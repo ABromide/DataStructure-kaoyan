@@ -1,0 +1,3 @@
+git remote add origin git@github.com:ABromide/DataStructure-kaoyan.git
+git push -u origin main
+git push origin main
